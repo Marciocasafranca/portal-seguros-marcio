@@ -1,0 +1,78 @@
+.empresas-container{
+
+    padding-bottom:50px;
+
+}
+
+
+.titulo-empresas{
+
+    color:#c90000;
+    font-weight:700;
+
+}
+
+
+.descripcion-empresas{
+
+    font-size:20px;
+    color:#555;
+
+}
+
+
+.empresa-card{
+
+    border-radius:15px;
+    height:100%;
+    transition:0.3s;
+
+}
+
+
+.empresa-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+.icono-empresa{
+
+    font-size:45px;
+    margin-bottom:15px;
+
+}
+
+
+.empresa-card h4{
+
+    color:#c90000;
+    font-weight:bold;
+
+}
+
+
+.empresa-card p{
+
+    color:#666;
+    min-height:60px;
+
+}
+
+
+.btn-danger{
+
+    background:#c90000;
+    border:none;
+
+}
+
+
+.btn-danger:hover{
+
+    background:#900000;
+
+}

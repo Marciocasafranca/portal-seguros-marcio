@@ -1,0 +1,172 @@
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+#root {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+
+  min-height: 85px;
+
+  padding: 8px 0;
+
+}
+
+
+/* LOGO */
+
+.logo-navbar {
+
+  width: 100px;
+
+  height: 100px;
+
+  object-fit: contain;
+
+  background: white;
+
+  border-radius: 50%;
+
+  padding: 2px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+
+}
+
+
+/* NOMBRE DE LA EMPRESA */
+
+.navbar-brand span {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+}
+
+
+/* MENU */
+
+.nav-link {
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  margin-left: 12px;
+
+  transition: 0.3s;
+
+}
+
+
+.nav-link:hover {
+
+  transform: translateY(-2px);
+
+  opacity: 0.85;
+
+}
+
+
+/* =====================================
+   WHATSAPP FLOTANTE
+===================================== */
+
+.whatsapp-btn {
+
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  background-color: #25D366;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+  z-index: 1000;
+
+}
+
+
+.whatsapp-btn:hover {
+
+  transform: scale(1.1);
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+  margin-top: 40px;
+
+}
+
+
+/* =====================================
+   RESPONSIVE CELULAR
+===================================== */
+
+@media(max-width: 768px) {
+
+
+  .logo-navbar {
+
+    width: 70px;
+
+    height: 70px;
+
+  }
+
+
+  .navbar-brand span {
+
+    font-size: 18px;
+
+  }
+
+
+  .nav-link {
+
+    margin-left: 0;
+
+    padding: 8px;
+
+  }
+
+
+}

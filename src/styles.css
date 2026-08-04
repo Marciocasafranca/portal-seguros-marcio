@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#f5f5f5;
+}
+
+
+/* NAVBAR MAPFRE */
+
+.navbar-mapfre{
+
+    background:#d71920 !important;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+}
+
+
+.navbar-brand{
+
+    letter-spacing:1px;
+
+}
+
+
+.nav-link{
+
+    transition:.3s;
+
+}
+
+
+.nav-link:hover{
+
+    color:#ffd700 !important;
+
+}

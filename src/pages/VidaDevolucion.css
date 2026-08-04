@@ -1,0 +1,52 @@
+.vida-container{
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.vida-card{
+  width:100%;
+  max-width:600px;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.vida-card h1{
+  text-align:center;
+}
+
+.vida-card label{
+  display:block;
+  margin-top:15px;
+  font-weight:bold;
+}
+
+.vida-card input,
+.vida-card select{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+}
+
+.resultado{
+  text-align:center;
+  margin-top:25px;
+}
+
+.resultado strong{
+  font-size:2rem;
+}
+
+.aviso-vida{
+  margin-top:20px;
+  font-size:.9rem;
+}
+
+.vida-card button{
+  width:100%;
+  margin-top:20px;
+  padding:12px;
+  cursor:pointer;
+}
