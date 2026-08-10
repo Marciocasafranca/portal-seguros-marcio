@@ -15,7 +15,7 @@ function Home() {
       descripcion:
         "Protección para tu vehículo ante accidentes, robos y daños.",
       mensaje:
-        "Hola Marcio, deseo cotizar un Seguro Vehicular.",
+        "Hola Marcio, deseo cotizar un Seguro Vehicular."
     },
     {
       titulo: "Seguro de Vida",
@@ -23,7 +23,7 @@ function Home() {
       descripcion:
         "Protege el futuro y la tranquilidad de tu familia.",
       mensaje:
-        "Hola Marcio, deseo información sobre un Seguro de Vida.",
+        "Hola Marcio, deseo información sobre un Seguro de Vida."
     },
     {
       titulo: "Seguro de Salud",
@@ -31,7 +31,7 @@ function Home() {
       descripcion:
         "Atención y respaldo médico cuando más lo necesitas.",
       mensaje:
-        "Hola Marcio, deseo información sobre un Seguro de Salud.",
+        "Hola Marcio, deseo información sobre un Seguro de Salud."
     },
     {
       titulo: "Seguro de Viaje",
@@ -39,8 +39,8 @@ function Home() {
       descripcion:
         "Viaja tranquilo contando con protección durante tu viaje.",
       mensaje:
-        "Hola Marcio, deseo cotizar un Seguro de Viaje.",
-    },
+        "Hola Marcio, deseo cotizar un Seguro de Viaje."
+    }
   ];
 
   const enviarWhatsApp = (mensaje) => {
@@ -51,14 +51,18 @@ function Home() {
   };
 
   return (
-    <>
+    <main>
+
       {/* =====================================================
           HERO PRINCIPAL
-      ===================================================== */}
+          ===================================================== */}
 
       <section className="hero-corporativo">
+
         <div className="hero-contenido">
+
           <div className="hero-texto">
+
             <span className="hero-etiqueta">
               🛡️ SEGUROS MARCIO
             </span>
@@ -76,12 +80,19 @@ function Home() {
             </p>
 
             <div className="hero-asesor">
-              <strong>Marcio Casafranca</strong>
 
-              <span>Asesor de Seguros</span>
+              <strong>
+                Marcio Casafranca
+              </strong>
+
+              <span>
+                Asesor de Seguros
+              </span>
+
             </div>
 
             <div className="hero-botones">
+
               <a
                 href="https://wa.me/51968193591?text=Hola%20Marcio,%20deseo%20información%20sobre%20sus%20seguros."
                 target="_blank"
@@ -97,42 +108,59 @@ function Home() {
               >
                 Ver seguros
               </a>
+
             </div>
+
           </div>
 
+
           <div className="hero-foto">
+
             <div className="foto-marco">
+
               <img
                 src={marcio}
                 alt="Marcio Casafranca - Asesor de Seguros"
                 className="foto-marcio"
               />
+
             </div>
 
             <div className="foto-badge">
+
               <span>✓</span>
 
               <div>
                 <strong>Atención personalizada</strong>
                 <small>Asesoría profesional</small>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
 
       {/* =====================================================
           CARRUSEL DE SEGUROS
-      ===================================================== */}
+          ===================================================== */}
 
       <section className="carrusel-seguros">
+
         <div
           id="segurosCarousel"
           className="carousel slide"
           data-bs-ride="carousel"
           data-bs-interval="5000"
         >
+
+          {/* INDICADORES */}
+
           <div className="carousel-indicators">
+
             <button
               type="button"
               data-bs-target="#segurosCarousel"
@@ -162,12 +190,19 @@ function Home() {
               data-bs-slide-to="3"
               aria-label="Seguro de Viaje"
             />
+
           </div>
 
+
+          {/* CONTENIDO DEL CARRUSEL */}
+
           <div className="carousel-inner">
+
+
             {/* VIDA */}
 
             <div className="carousel-item active">
+
               <img
                 src={vida}
                 className="d-block w-100 carrusel-imagen"
@@ -177,6 +212,7 @@ function Home() {
               <div className="carrusel-overlay"></div>
 
               <div className="carousel-caption carrusel-contenido">
+
                 <span className="carrusel-etiqueta">
                   SEGURO DE VIDA
                 </span>
@@ -200,12 +236,16 @@ function Home() {
                 >
                   Conocer más →
                 </a>
+
               </div>
+
             </div>
+
 
             {/* VEHICULAR */}
 
             <div className="carousel-item">
+
               <img
                 src={vehicular}
                 className="d-block w-100 carrusel-imagen"
@@ -215,6 +255,7 @@ function Home() {
               <div className="carrusel-overlay"></div>
 
               <div className="carousel-caption carrusel-contenido">
+
                 <span className="carrusel-etiqueta">
                   SEGURO VEHICULAR
                 </span>
@@ -238,12 +279,16 @@ function Home() {
                 >
                   Cotizar ahora →
                 </a>
+
               </div>
+
             </div>
+
 
             {/* SALUD */}
 
             <div className="carousel-item">
+
               <img
                 src={salud}
                 className="d-block w-100 carrusel-imagen"
@@ -253,6 +298,7 @@ function Home() {
               <div className="carrusel-overlay"></div>
 
               <div className="carousel-caption carrusel-contenido">
+
                 <span className="carrusel-etiqueta">
                   SEGURO DE SALUD
                 </span>
@@ -276,12 +322,16 @@ function Home() {
                 >
                   Consultar →
                 </a>
+
               </div>
+
             </div>
+
 
             {/* VIAJE */}
 
             <div className="carousel-item">
+
               <img
                 src={viaje}
                 className="d-block w-100 carrusel-imagen"
@@ -291,6 +341,7 @@ function Home() {
               <div className="carrusel-overlay"></div>
 
               <div className="carousel-caption carrusel-contenido">
+
                 <span className="carrusel-etiqueta">
                   SEGURO DE VIAJE
                 </span>
@@ -314,9 +365,15 @@ function Home() {
                 >
                   Ver opciones →
                 </a>
+
               </div>
+
             </div>
+
           </div>
+
+
+          {/* ANTERIOR */}
 
           <button
             className="carousel-control-prev"
@@ -324,6 +381,7 @@ function Home() {
             data-bs-target="#segurosCarousel"
             data-bs-slide="prev"
           >
+
             <span
               className="carousel-control-prev-icon"
               aria-hidden="true"
@@ -332,7 +390,11 @@ function Home() {
             <span className="visually-hidden">
               Anterior
             </span>
+
           </button>
+
+
+          {/* SIGUIENTE */}
 
           <button
             className="carousel-control-next"
@@ -340,6 +402,7 @@ function Home() {
             data-bs-target="#segurosCarousel"
             data-bs-slide="next"
           >
+
             <span
               className="carousel-control-next-icon"
               aria-hidden="true"
@@ -348,18 +411,26 @@ function Home() {
             <span className="visually-hidden">
               Siguiente
             </span>
+
           </button>
+
         </div>
+
       </section>
+
 
       {/* =====================================================
           PRESENTACIÓN
-      ===================================================== */}
+          ===================================================== */}
 
       <section className="presentacion">
+
         <div className="container">
+
           <div className="presentacion-contenido">
+
             <div>
+
               <span className="seccion-etiqueta">
                 SEGUROS MARCIO
               </span>
@@ -369,6 +440,7 @@ function Home() {
                 <br />
                 <span>a lo que necesitas.</span>
               </h2>
+
             </div>
 
             <p>
@@ -377,20 +449,27 @@ function Home() {
               mejores decisiones al momento de proteger lo
               que realmente importa.
             </p>
+
           </div>
+
         </div>
+
       </section>
+
 
       {/* =====================================================
           NUESTROS SEGUROS
-      ===================================================== */}
+          ===================================================== */}
 
       <section
         className="seccion-seguros"
         id="seguros"
       >
+
         <div className="container">
+
           <div className="titulo-seccion">
+
             <span className="seccion-etiqueta">
               NUESTROS PRODUCTOS
             </span>
@@ -403,16 +482,23 @@ function Home() {
               Conoce algunas de las alternativas de protección
               que podemos gestionar para ti.
             </p>
+
           </div>
 
+
           <div className="row g-4">
+
             {seguros.map((seguro, index) => (
+
               <div
                 className="col-lg-3 col-md-6"
                 key={index}
               >
+
                 <article className="seguro-card">
+
                   <div className="seguro-imagen-container">
+
                     <img
                       src={seguro.imagen}
                       alt={seguro.titulo}
@@ -422,12 +508,18 @@ function Home() {
                     <span className="numero-seguro">
                       0{index + 1}
                     </span>
+
                   </div>
 
                   <div className="seguro-contenido">
-                    <h3>{seguro.titulo}</h3>
 
-                    <p>{seguro.descripcion}</p>
+                    <h3>
+                      {seguro.titulo}
+                    </h3>
+
+                    <p>
+                      {seguro.descripcion}
+                    </p>
 
                     <button
                       onClick={() =>
@@ -438,21 +530,32 @@ function Home() {
                       Cotizar
                       <span>→</span>
                     </button>
+
                   </div>
+
                 </article>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </section>
+
 
       {/* =====================================================
           POR QUÉ ELEGIRNOS
-      ===================================================== */}
+          ===================================================== */}
 
       <section className="seccion-confianza">
+
         <div className="container">
+
           <div className="titulo-seccion titulo-blanco">
+
             <span className="seccion-etiqueta">
               NUESTRA PROPUESTA
             </span>
@@ -460,80 +563,118 @@ function Home() {
             <h2>
               ¿Por qué elegir Seguros Marcio?
             </h2>
+
           </div>
 
+
           <div className="row g-4">
+
             <div className="col-lg-3 col-md-6">
+
               <div className="confianza-card">
+
                 <div className="icono-confianza">
                   🛡️
                 </div>
 
-                <h3>Protección</h3>
+                <h3>
+                  Protección
+                </h3>
 
                 <p>
                   Alternativas para proteger aquello
                   que más valoras.
                 </p>
+
               </div>
+
             </div>
 
+
             <div className="col-lg-3 col-md-6">
+
               <div className="confianza-card">
+
                 <div className="icono-confianza">
                   🤝
                 </div>
 
-                <h3>Asesoría</h3>
+                <h3>
+                  Asesoría
+                </h3>
 
                 <p>
                   Te acompañamos para encontrar una
                   opción adecuada a tus necesidades.
                 </p>
+
               </div>
+
             </div>
 
+
             <div className="col-lg-3 col-md-6">
+
               <div className="confianza-card">
+
                 <div className="icono-confianza">
                   ⚡
                 </div>
 
-                <h3>Rapidez</h3>
+                <h3>
+                  Rapidez
+                </h3>
 
                 <p>
                   Cotizaciones y orientación de manera
                   rápida y sencilla.
                 </p>
+
               </div>
+
             </div>
 
+
             <div className="col-lg-3 col-md-6">
+
               <div className="confianza-card">
+
                 <div className="icono-confianza">
                   ⭐
                 </div>
 
-                <h3>Confianza</h3>
+                <h3>
+                  Confianza
+                </h3>
 
                 <p>
                   Atención cercana y personalizada
                   durante el proceso.
                 </p>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </section>
+
 
       {/* =====================================================
           CONTACTO
-      ===================================================== */}
+          ===================================================== */}
 
       <section className="seccion-contacto">
+
         <div className="container">
+
           <div className="contacto-card">
+
             <div>
+
               <span className="seccion-etiqueta">
                 ¿NECESITAS ASESORÍA?
               </span>
@@ -546,6 +687,7 @@ function Home() {
                 Cuéntame qué necesitas proteger y
                 te ayudaré a encontrar una alternativa.
               </p>
+
             </div>
 
             <a
@@ -556,10 +698,14 @@ function Home() {
             >
               📲 Hablar por WhatsApp
             </a>
+
           </div>
+
         </div>
+
       </section>
-    </>
+
+    </main>
   );
 }
 

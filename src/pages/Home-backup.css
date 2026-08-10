@@ -1,0 +1,533 @@
+```css
+/* =========================================
+   CARRUSEL PRINCIPAL
+========================================= */
+
+.hero-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 620px;
+}
+
+.carousel-imagen {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.48) 45%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 40px 10%;
+}
+
+.carousel-contenido {
+  max-width: 650px;
+}
+
+.badge-seguros {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.carousel-caption h1 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.carousel-caption p {
+  font-size: 21px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.btn-carousel {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-carousel:hover {
+  background: white;
+  color: #d71920;
+  transform: translateY(-3px);
+}
+
+.carousel-indicators button {
+  width: 35px !important;
+  height: 5px !important;
+  border: 0 !important;
+  border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion-section {
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+.foto-marcio {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid white;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+}
+
+.seccion-label,
+.titulo-seccion span {
+  color: #d71920;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.presentacion-section h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 12px 0;
+  color: #222;
+}
+
+.presentacion-section h2 span {
+  color: #d71920;
+}
+
+.presentacion-section h4 {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.presentacion-section p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.btn-presentacion {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 25px;
+  background: #d71920;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-presentacion:hover {
+  background: #b51218;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   SECCIÓN SEGUROS
+========================================= */
+
+.seguros-section {
+  padding: 90px 20px;
+  background: #f6f7f9;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo-seccion h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #222;
+  margin-top: 10px;
+}
+
+.titulo-seccion p {
+  color: #777;
+  font-size: 17px;
+}
+
+.seguro-card {
+  height: 100%;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+  transition: all 0.3s ease;
+}
+
+.seguro-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.seguro-imagen-container {
+  height: 190px;
+  overflow: hidden;
+}
+
+.seguro-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.seguro-card:hover .seguro-imagen {
+  transform: scale(1.08);
+}
+
+.seguro-card-body {
+  padding: 25px;
+  text-align: center;
+}
+
+.seguro-card-body h3 {
+  font-size: 21px;
+  color: #d71920;
+  font-weight: 800;
+}
+
+.seguro-card-body p {
+  color: #666;
+  line-height: 1.6;
+  min-height: 75px;
+}
+
+.btn-seguro {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-seguro:hover {
+  background: #b51218;
+  color: white;
+}
+
+
+/* =========================================
+   VENTAJAS
+========================================= */
+
+.ventajas-section {
+  padding: 90px 20px;
+  background: white;
+}
+
+.ventaja-card {
+  height: 100%;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+  transition: 0.3s;
+}
+
+.ventaja-card:hover {
+  transform: translateY(-8px);
+}
+
+.ventaja-icono {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.ventaja-card h3 {
+  color: #d71920;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ventaja-card p {
+  color: #666;
+}
+
+
+/* =========================================
+   ESTADÍSTICAS
+========================================= */
+
+.estadisticas-section {
+  padding: 70px 20px;
+  background: #d71920;
+  color: white;
+}
+
+.estadistica {
+  padding: 15px;
+}
+
+.estadistica strong {
+  display: block;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.estadistica span {
+  font-size: 16px;
+}
+
+
+/* =========================================
+   TESTIMONIOS
+========================================= */
+
+.testimonios-section {
+  padding: 90px 20px;
+  background: #f6f7f9;
+}
+
+.testimonial-card {
+  height: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.estrellas {
+  color: #f4b400;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.testimonial-card strong {
+  color: #d71920;
+}
+
+
+/* =========================================
+   CTA FINAL
+========================================= */
+
+.cta-section {
+  padding: 90px 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #171717,
+      #333333
+    );
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.cta-section p {
+  font-size: 19px;
+  margin: 20px 0 30px;
+  color: #ddd;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  background: white;
+  color: #d71920;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero-carousel .carousel,
+  .hero-carousel .carousel-inner,
+  .hero-carousel .carousel-item {
+    height: 540px;
+  }
+
+  .carousel-imagen {
+    height: 540px;
+  }
+
+  .carousel-caption {
+    padding: 30px 25px;
+    align-items: center;
+  }
+
+  .carousel-contenido {
+    text-align: center;
+    width: 100%;
+  }
+
+  .badge-seguros {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 35px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn-carousel {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .foto-marcio {
+    width: 230px;
+    height: 230px;
+  }
+
+  .presentacion-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .presentacion-section h2 {
+    font-size: 32px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 30px;
+  }
+
+  .seguros-section,
+  .ventajas-section,
+  .testimonios-section {
+    padding: 65px 20px;
+  }
+
+  .estadisticas-section {
+    padding: 50px 15px;
+  }
+
+  .estadistica strong {
+    font-size: 35px;
+  }
+
+  .estadistica span {
+    font-size: 14px;
+  }
+
+  .cta-section {
+    padding: 65px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 30px;
+  }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-carousel .carousel,
+  .hero-carousel .carousel-inner,
+  .hero-carousel .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-imagen {
+    height: 500px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 29px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .foto-marcio {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+```
