@@ -173,7 +173,7 @@ body {
 }
 
 /* =========================================================
-   BOTONES
+   BOTONES HERO
 ========================================================= */
 
 .hero-botones {
@@ -239,7 +239,7 @@ body {
 }
 
 /* =========================================================
-   FOTO
+   LOGO PRINCIPAL
 ========================================================= */
 
 .hero-foto {
@@ -252,17 +252,22 @@ body {
   align-items: center;
 }
 
-.foto-marco {
-  position: relative;
-
+.logo-marco {
   width: 380px;
-  height: 440px;
+
+  min-height: 380px;
 
   display: flex;
+
+  flex-direction: column;
 
   align-items: center;
 
   justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
 
   background:
     linear-gradient(
@@ -273,57 +278,86 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  border-radius: 6px;
+  border-radius: 10px;
 
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.45);
 
-  transform: rotate(2deg);
+  position: relative;
 }
 
-.foto-marco::before {
+.logo-marco::before {
   content: "";
 
   position: absolute;
 
-  width: 100%;
-  height: 100%;
+  inset: 15px;
 
   border: 2px solid #d71920;
 
-  border-radius: 6px;
+  border-radius: 8px;
 
-  transform: translate(15px, 15px);
-
-  z-index: -1;
+  pointer-events: none;
 }
 
-.foto-marcio {
-  width: 310px;
-  height: 370px;
+.logo-contenedor {
+  width: 120px;
+  height: 120px;
 
-  object-fit: cover;
+  display: flex;
 
-  border-radius: 4px;
+  align-items: center;
 
-  border: 5px solid white;
+  justify-content: center;
+
+  background: #d71920;
+
+  border-radius: 50%;
+
+  font-size: 55px;
+
+  margin-bottom: 25px;
 
   box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.35);
+    0 15px 35px rgba(215, 25, 32, 0.35);
+}
 
-  transform: rotate(-2deg);
+.logo-marco h2 {
+  margin: 0;
+
+  font-size: 34px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  color: white;
+}
+
+.logo-marco h2 span {
+  color: #e51b23;
+}
+
+.logo-marco p {
+  margin-top: 12px;
+
+  color: #bdbdbd;
+
+  font-size: 15px;
+
+  letter-spacing: 2px;
 }
 
 /* =========================================================
-   BADGE FOTO
+   BADGE
 ========================================================= */
 
 .foto-badge {
   position: absolute;
 
-  bottom: 25px;
+  bottom: 15px;
 
-  left: 5px;
+  left: 0;
 
   display: flex;
 
@@ -607,7 +641,7 @@ body {
 }
 
 /* =========================================================
-   SEGUROS
+   SECCIÓN SEGUROS
 ========================================================= */
 
 .seccion-seguros {
@@ -641,7 +675,7 @@ body {
 }
 
 /* =========================================================
-   TARJETAS
+   TARJETAS DE SEGUROS
 ========================================================= */
 
 .seguro-card {
@@ -920,10 +954,72 @@ body {
 }
 
 /* =========================================================
+   INVERSIÓN
+========================================================= */
+
+.inversion-container {
+  padding-bottom: 50px;
+}
+
+.titulo-inversion {
+  color: #c90000;
+
+  font-weight: 700;
+}
+
+.descripcion-inversion {
+  font-size: 20px;
+
+  color: #555;
+}
+
+.inversion-card {
+  border-radius: 15px;
+
+  height: 100%;
+
+  transition: 0.3s;
+}
+
+.inversion-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icono-inversion {
+  font-size: 50px;
+
+  margin-bottom: 15px;
+}
+
+.inversion-card h4 {
+  color: #c90000;
+
+  font-weight: bold;
+}
+
+.inversion-card p {
+  color: #666;
+}
+
+.btn-danger {
+  background: #c90000;
+
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #900000;
+}
+
+/* =========================================================
    TABLET
 ========================================================= */
 
 @media (max-width: 992px) {
+
   .hero-contenido {
     grid-template-columns: 1fr;
 
@@ -969,6 +1065,7 @@ body {
 
     text-align: center;
   }
+
 }
 
 /* =========================================================
@@ -976,6 +1073,7 @@ body {
 ========================================================= */
 
 @media (max-width: 768px) {
+
   .hero-corporativo {
     min-height: auto;
   }
@@ -1000,17 +1098,33 @@ body {
     width: 100%;
   }
 
-  .foto-marco {
+  /* LOGO */
+
+  .logo-marco {
     width: 300px;
 
-    height: 350px;
+    min-height: 330px;
+
+    padding: 30px;
   }
 
-  .foto-marcio {
-    width: 240px;
+  .logo-contenedor {
+    width: 100px;
 
-    height: 300px;
+    height: 100px;
+
+    font-size: 45px;
   }
+
+  .logo-marco h2 {
+    font-size: 27px;
+  }
+
+  .logo-marco p {
+    font-size: 13px;
+  }
+
+  /* BADGE */
 
   .foto-badge {
     left: 50%;
@@ -1041,7 +1155,9 @@ body {
     text-align: center;
   }
 
-  /* CARRUSEL CELULAR */
+  /* =====================================================
+     CARRUSEL CELULAR
+  ===================================================== */
 
   .carrusel-imagen {
     height: 500px;
@@ -1086,6 +1202,7 @@ body {
   .carrusel-seguros .carousel-control-next {
     width: 12%;
   }
+
 }
 
 /* =========================================================
@@ -1093,6 +1210,7 @@ body {
 ========================================================= */
 
 @media (max-width: 480px) {
+
   .hero-contenido {
     padding: 45px 15px 65px;
   }
@@ -1116,17 +1234,37 @@ body {
     width: 100%;
   }
 
-  .foto-marco {
+  /* LOGO */
+
+  .logo-marco {
     width: 260px;
 
-    height: 320px;
+    min-height: 300px;
+
+    padding: 25px;
   }
 
-  .foto-marcio {
-    width: 215px;
+  .logo-contenedor {
+    width: 85px;
 
-    height: 275px;
+    height: 85px;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
   }
+
+  .logo-marco h2 {
+    font-size: 23px;
+  }
+
+  .logo-marco p {
+    font-size: 11px;
+
+    letter-spacing: 1px;
+  }
+
+  /* BADGE */
 
   .foto-badge {
     font-size: 11px;
@@ -1144,7 +1282,9 @@ body {
     font-size: 32px;
   }
 
-  /* CARRUSEL PEQUEÑO */
+  /* =====================================================
+     CARRUSEL PEQUEÑO
+  ===================================================== */
 
   .carrusel-imagen {
     height: 520px;
@@ -1169,4 +1309,5 @@ body {
 
     font-size: 14px;
   }
+
 }
