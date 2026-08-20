@@ -4,6 +4,7 @@ import vehicular from "../assets/seguros/vehicular.jpg";
 import vida from "../assets/seguros/vida.jpg";
 import salud from "../assets/seguros/salud.jpg";
 import viaje from "../assets/seguros/viaje.jpg";
+import familiaSeguros from "../assets/familia-seguros.jpg";
 
 function Home() {
   const seguros = [
@@ -103,7 +104,7 @@ function Home() {
           </div>
 
           {/* =================================================
-              LOGO EN LUGAR DE LA FOTO
+              IMAGEN PRINCIPAL DE LA FAMILIA
           ================================================= */}
 
           <div className="hero-foto">
@@ -111,7 +112,10 @@ function Home() {
             <div className="logo-marco">
 
               <div className="logo-contenedor">
-                🛡️
+                <img
+                  src={familiaSeguros}
+                  alt="Familia protegida por Seguros Marcio"
+                />
               </div>
 
               <h2>
